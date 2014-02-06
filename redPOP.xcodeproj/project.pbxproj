@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF0F1C5018A413E300BB646C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0F1C4F18A413E300BB646C /* Foundation.framework */; };
+		DF0F1C5218A413E300BB646C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0F1C5118A413E300BB646C /* CoreGraphics.framework */; };
+		DF0F1C5418A413E300BB646C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0F1C5318A413E300BB646C /* UIKit.framework */; };
+		DF0F1C5A18A413E300BB646C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF0F1C5818A413E300BB646C /* InfoPlist.strings */; };
+		DF0F1C5C18A413E300BB646C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0F1C5B18A413E300BB646C /* main.m */; };
+		DF0F1C6018A413E300BB646C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0F1C5F18A413E300BB646C /* AppDelegate.m */; };
+		DF0F1C6318A413E300BB646C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0F1C6118A413E300BB646C /* Main.storyboard */; };
+		DF0F1C6618A413E300BB646C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0F1C6518A413E300BB646C /* ViewController.m */; };
+		DF0F1C6818A413E300BB646C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0F1C6718A413E300BB646C /* Images.xcassets */; };
+		DF0F1C6F18A413E300BB646C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0F1C6E18A413E300BB646C /* XCTest.framework */; };
+		DF0F1C7018A413E300BB646C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0F1C4F18A413E300BB646C /* Foundation.framework */; };
+		DF0F1C7118A413E300BB646C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0F1C5318A413E300BB646C /* UIKit.framework */; };
+		DF0F1C7918A413E300BB646C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF0F1C7718A413E300BB646C /* InfoPlist.strings */; };
+		DF0F1C7B18A413E300BB646C /* redPOPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0F1C7A18A413E300BB646C /* redPOPTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF0F1C7218A413E300BB646C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF0F1C4418A413E300BB646C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF0F1C4B18A413E300BB646C;
+			remoteInfo = redPOP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF0F1C4C18A413E300BB646C /* redPOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redPOP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0F1C4F18A413E300BB646C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF0F1C5118A413E300BB646C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DF0F1C5318A413E300BB646C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF0F1C5718A413E300BB646C /* redPOP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "redPOP-Info.plist"; sourceTree = "<group>"; };
+		DF0F1C5918A413E300BB646C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF0F1C5B18A413E300BB646C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF0F1C5D18A413E300BB646C /* redPOP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "redPOP-Prefix.pch"; sourceTree = "<group>"; };
+		DF0F1C5E18A413E300BB646C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DF0F1C5F18A413E300BB646C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DF0F1C6218A413E300BB646C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF0F1C6418A413E300BB646C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DF0F1C6518A413E300BB646C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DF0F1C6718A413E300BB646C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DF0F1C6D18A413E300BB646C /* redPOPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = redPOPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0F1C6E18A413E300BB646C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DF0F1C7618A413E300BB646C /* redPOPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "redPOPTests-Info.plist"; sourceTree = "<group>"; };
+		DF0F1C7818A413E300BB646C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF0F1C7A18A413E300BB646C /* redPOPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = redPOPTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF0F1C4918A413E300BB646C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0F1C5218A413E300BB646C /* CoreGraphics.framework in Frameworks */,
+				DF0F1C5418A413E300BB646C /* UIKit.framework in Frameworks */,
+				DF0F1C5018A413E300BB646C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0F1C6A18A413E300BB646C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0F1C6F18A413E300BB646C /* XCTest.framework in Frameworks */,
+				DF0F1C7118A413E300BB646C /* UIKit.framework in Frameworks */,
+				DF0F1C7018A413E300BB646C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF0F1C4318A413E300BB646C = {
+			isa = PBXGroup;
+			children = (
+				DF0F1C5518A413E300BB646C /* redPOP */,
+				DF0F1C7418A413E300BB646C /* redPOPTests */,
+				DF0F1C4E18A413E300BB646C /* Frameworks */,
+				DF0F1C4D18A413E300BB646C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF0F1C4D18A413E300BB646C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF0F1C4C18A413E300BB646C /* redPOP.app */,
+				DF0F1C6D18A413E300BB646C /* redPOPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF0F1C4E18A413E300BB646C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF0F1C4F18A413E300BB646C /* Foundation.framework */,
+				DF0F1C5118A413E300BB646C /* CoreGraphics.framework */,
+				DF0F1C5318A413E300BB646C /* UIKit.framework */,
+				DF0F1C6E18A413E300BB646C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF0F1C5518A413E300BB646C /* redPOP */ = {
+			isa = PBXGroup;
+			children = (
+				DF0F1C5E18A413E300BB646C /* AppDelegate.h */,
+				DF0F1C5F18A413E300BB646C /* AppDelegate.m */,
+				DF0F1C6118A413E300BB646C /* Main.storyboard */,
+				DF0F1C6418A413E300BB646C /* ViewController.h */,
+				DF0F1C6518A413E300BB646C /* ViewController.m */,
+				DF0F1C6718A413E300BB646C /* Images.xcassets */,
+				DF0F1C5618A413E300BB646C /* Supporting Files */,
+			);
+			path = redPOP;
+			sourceTree = "<group>";
+		};
+		DF0F1C5618A413E300BB646C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF0F1C5718A413E300BB646C /* redPOP-Info.plist */,
+				DF0F1C5818A413E300BB646C /* InfoPlist.strings */,
+				DF0F1C5B18A413E300BB646C /* main.m */,
+				DF0F1C5D18A413E300BB646C /* redPOP-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF0F1C7418A413E300BB646C /* redPOPTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF0F1C7A18A413E300BB646C /* redPOPTests.m */,
+				DF0F1C7518A413E300BB646C /* Supporting Files */,
+			);
+			path = redPOPTests;
+			sourceTree = "<group>";
+		};
+		DF0F1C7518A413E300BB646C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF0F1C7618A413E300BB646C /* redPOPTests-Info.plist */,
+				DF0F1C7718A413E300BB646C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF0F1C4B18A413E300BB646C /* redPOP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF0F1C7E18A413E300BB646C /* Build configuration list for PBXNativeTarget "redPOP" */;
+			buildPhases = (
+				DF0F1C4818A413E300BB646C /* Sources */,
+				DF0F1C4918A413E300BB646C /* Frameworks */,
+				DF0F1C4A18A413E300BB646C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = redPOP;
+			productName = redPOP;
+			productReference = DF0F1C4C18A413E300BB646C /* redPOP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF0F1C6C18A413E300BB646C /* redPOPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF0F1C8118A413E300BB646C /* Build configuration list for PBXNativeTarget "redPOPTests" */;
+			buildPhases = (
+				DF0F1C6918A413E300BB646C /* Sources */,
+				DF0F1C6A18A413E300BB646C /* Frameworks */,
+				DF0F1C6B18A413E300BB646C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF0F1C7318A413E300BB646C /* PBXTargetDependency */,
+			);
+			name = redPOPTests;
+			productName = redPOPTests;
+			productReference = DF0F1C6D18A413E300BB646C /* redPOPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF0F1C4418A413E300BB646C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = dot.ly;
+				TargetAttributes = {
+					DF0F1C6C18A413E300BB646C = {
+						TestTargetID = DF0F1C4B18A413E300BB646C;
+					};
+				};
+			};
+			buildConfigurationList = DF0F1C4718A413E300BB646C /* Build configuration list for PBXProject "redPOP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF0F1C4318A413E300BB646C;
+			productRefGroup = DF0F1C4D18A413E300BB646C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF0F1C4B18A413E300BB646C /* redPOP */,
+				DF0F1C6C18A413E300BB646C /* redPOPTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF0F1C4A18A413E300BB646C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0F1C6818A413E300BB646C /* Images.xcassets in Resources */,
+				DF0F1C5A18A413E300BB646C /* InfoPlist.strings in Resources */,
+				DF0F1C6318A413E300BB646C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0F1C6B18A413E300BB646C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0F1C7918A413E300BB646C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF0F1C4818A413E300BB646C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0F1C6618A413E300BB646C /* ViewController.m in Sources */,
+				DF0F1C6018A413E300BB646C /* AppDelegate.m in Sources */,
+				DF0F1C5C18A413E300BB646C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0F1C6918A413E300BB646C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0F1C7B18A413E300BB646C /* redPOPTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF0F1C7318A413E300BB646C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF0F1C4B18A413E300BB646C /* redPOP */;
+			targetProxy = DF0F1C7218A413E300BB646C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF0F1C5818A413E300BB646C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF0F1C5918A413E300BB646C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DF0F1C6118A413E300BB646C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF0F1C6218A413E300BB646C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF0F1C7718A413E300BB646C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF0F1C7818A413E300BB646C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF0F1C7C18A413E300BB646C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF0F1C7D18A413E300BB646C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF0F1C7F18A413E300BB646C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redPOP/redPOP-Prefix.pch";
+				INFOPLIST_FILE = "redPOP/redPOP-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DF0F1C8018A413E300BB646C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redPOP/redPOP-Prefix.pch";
+				INFOPLIST_FILE = "redPOP/redPOP-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DF0F1C8218A413E300BB646C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/redPOP.app/redPOP";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redPOP/redPOP-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "redPOPTests/redPOPTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DF0F1C8318A413E300BB646C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/redPOP.app/redPOP";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "redPOP/redPOP-Prefix.pch";
+				INFOPLIST_FILE = "redPOPTests/redPOPTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF0F1C4718A413E300BB646C /* Build configuration list for PBXProject "redPOP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF0F1C7C18A413E300BB646C /* Debug */,
+				DF0F1C7D18A413E300BB646C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF0F1C7E18A413E300BB646C /* Build configuration list for PBXNativeTarget "redPOP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF0F1C7F18A413E300BB646C /* Debug */,
+				DF0F1C8018A413E300BB646C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF0F1C8118A413E300BB646C /* Build configuration list for PBXNativeTarget "redPOPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF0F1C8218A413E300BB646C /* Debug */,
+				DF0F1C8318A413E300BB646C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF0F1C4418A413E300BB646C /* Project object */;
+}
