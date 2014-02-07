@@ -19,201 +19,171 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tw9-8n-gYF">
                                 <rect key="frame" x="20" y="90" width="46" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="9"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
                                 <color key="textColor" red="0.97973134569999998" green="0.97973134569999998" blue="0.97973134569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjY-IM-DMf">
-                                <rect key="frame" x="74" y="90" width="64" height="21"/>
+                                <rect key="frame" x="74" y="90" width="103" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="0.97973134569999998" green="0.97973134569999998" blue="0.97973134569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50U-da-Efl">
-                                <rect key="frame" x="20" y="128" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50U-da-Efl">
+                                <rect key="frame" x="0.0" y="176" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Button" image="redCircle.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IMi-re-5vp"/>
+                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mn7-fQ-AHw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSj-5n-tBP">
-                                <rect key="frame" x="137" y="128" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32F-fi-ST1">
+                                <rect key="frame" x="115" y="176" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Button" image="redCircle.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0Un-9W-AUs"/>
+                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="O5l-mi-wAh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkX-5q-ILE">
-                                <rect key="frame" x="254" y="128" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBA-yC-Y6m">
+                                <rect key="frame" x="230" y="176" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Button" image="redCircle.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="N8p-SS-Yq4"/>
+                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="490-oQ-F25"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGg-50-bIy">
-                                <rect key="frame" x="20" y="201" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8H-C9-Ms2">
+                                <rect key="frame" x="230" y="250" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Button" image="redCircle.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Tsh-ly-1SF"/>
+                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="13h-W0-amg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKs-DH-SuZ">
-                                <rect key="frame" x="137" y="201" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="211-ra-HZ7">
+                                <rect key="frame" x="0.0" y="250" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Button" image="redCircle.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NF8-0U-kKp"/>
+                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tRy-JU-pCO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufl-zs-l4k">
-                                <rect key="frame" x="254" y="201" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04n-Ni-PXz">
+                                <rect key="frame" x="115" y="250" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Button" image="redCircle.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9jc-Gx-rf5"/>
+                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cMg-7B-izF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adn-kU-71B">
-                                <rect key="frame" x="20" y="269" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ug1-x1-jbJ">
+                                <rect key="frame" x="230" y="329" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Button" image="redCircle.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ddX-em-2sd"/>
+                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Mrd-xG-vY2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0d1-Mt-VAe">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGP-pI-aLS">
+                                <rect key="frame" x="115" y="329" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Button" image="redCircle.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CbB-AB-PSO"/>
+                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xuQ-ri-gnD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddr-Qq-0Kf">
-                                <rect key="frame" x="254" y="269" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuD-sU-1gO">
+                                <rect key="frame" x="0.0" y="329" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Button" image="redCircle.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gST-1f-6T3"/>
+                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="y36-u5-M8K"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25p-Nq-pLQ">
-                                <rect key="frame" x="20" y="340" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gc4-Hs-yWN">
+                                <rect key="frame" x="230" y="405" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Button" image="redCircle.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HFI-KL-Q8z"/>
+                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pYr-IV-VYd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdi-Bu-msi">
-                                <rect key="frame" x="137" y="340" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDo-hx-hZ1">
+                                <rect key="frame" x="115" y="405" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Button" image="redCircle.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6ZW-tN-O7E"/>
+                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FiA-zp-f5y"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3U-Tu-l4D">
-                                <rect key="frame" x="254" y="340" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1z-J5-2BU">
+                                <rect key="frame" x="0.0" y="405" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Button" image="redCircle.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oeZ-jI-xTI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4v-dC-bLI">
-                                <rect key="frame" x="20" y="414" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PJt-Uj-AGC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUX-Lm-x02">
-                                <rect key="frame" x="137" y="414" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="T6N-Kf-Ofm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38u-Kd-U6D">
-                                <rect key="frame" x="254" y="414" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qss-n8-aSQ"/>
+                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cDW-qI-jWq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20t-ex-NBc">
                                 <rect key="frame" x="220" y="90" width="31" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="9"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                 <color key="textColor" red="0.97973134569999998" green="0.97973134569999998" blue="0.97973134569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="36" translatesAutoresizingMaskIntoConstraints="NO" id="qFT-78-lh1">
-                                <rect key="frame" x="264" y="90" width="36" height="28"/>
+                                <rect key="frame" x="264" y="87" width="36" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="0.97973134569999998" green="0.97973134569999998" blue="0.97973134569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zeb-my-O1Y">
-                                <rect key="frame" x="94" y="469" width="132" height="30"/>
+                                <rect key="frame" x="94" y="487" width="132" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Start">
-                                    <color key="titleColor" red="0.5071932133" green="1" blue="0.1811196078" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start" backgroundImage="pw_maze_black.png">
+                                    <color key="titleColor" red="0.97973134569999998" green="0.97973134569999998" blue="0.97973134569999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="pressedButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="K65-EF-avM"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QTZ-XU-lJE">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTZ-XU-lJE">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" red="1" green="0.0835434231" blue="0.16057811659999999" alpha="0.83000000000000007" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.1294117719" green="0.64705884459999996" blue="0.90588241820000004" alpha="1" colorSpace="deviceRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" red="0.97973134569999998" green="0.97973134569999998" blue="0.97973134569999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="15Buttons" prompt="Game" id="uWX-nn-udY">
+                                    <navigationItem prompt=" " id="uWX-nn-udY">
                                         <barButtonItem key="leftBarButtonItem" title="Menu" id="gPt-bY-czm">
                                             <color key="tintColor" red="0.97973134569999998" green="0.97973134569999998" blue="0.97973134569999998" alpha="1" colorSpace="calibratedRGB"/>
                                         </barButtonItem>
@@ -224,25 +194,59 @@
                                 <rect key="frame" x="0.0" y="518" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </adBannerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="yu5-Gu-UaS">
+                                <rect key="frame" x="111" y="10" width="99" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uo3-cD-8Et">
+                                <rect key="frame" x="0.0" y="109" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="redCircle.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hPs-RE-B3O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIf-ds-7ZC">
+                                <rect key="frame" x="115" y="109" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="redCircle.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NvJ-s0-tv5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGN-cZ-6h5">
+                                <rect key="frame" x="230" y="109" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="redCircle.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goodTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lqQ-P5-eZT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="button1" destination="50U-da-Efl" id="jiv-Xt-yld"/>
-                        <outlet property="button10" destination="25p-Nq-pLQ" id="W8F-as-tLV"/>
-                        <outlet property="button11" destination="rdi-Bu-msi" id="sZ9-yp-32N"/>
-                        <outlet property="button12" destination="o3U-Tu-l4D" id="041-d2-CmR"/>
-                        <outlet property="button13" destination="L4v-dC-bLI" id="i5M-4x-b4l"/>
-                        <outlet property="button14" destination="rUX-Lm-x02" id="JdL-8V-a8j"/>
-                        <outlet property="button15" destination="38u-Kd-U6D" id="5cQ-dt-buH"/>
-                        <outlet property="button2" destination="fSj-5n-tBP" id="BPe-Af-rxv"/>
-                        <outlet property="button3" destination="rkX-5q-ILE" id="8gd-VR-TmX"/>
-                        <outlet property="button4" destination="hGg-50-bIy" id="PKQ-UF-qHP"/>
-                        <outlet property="button5" destination="CKs-DH-SuZ" id="oIC-xs-isb"/>
-                        <outlet property="button6" destination="Ufl-zs-l4k" id="Gbk-Tj-EPp"/>
-                        <outlet property="button7" destination="adn-kU-71B" id="FKZ-yJ-PHJ"/>
-                        <outlet property="button8" destination="0d1-Mt-VAe" id="swA-4B-9uN"/>
-                        <outlet property="button9" destination="Ddr-Qq-0Kf" id="9vl-FC-a7b"/>
+                        <outlet property="button1" destination="Uo3-cD-8Et" id="oXV-It-qpG"/>
+                        <outlet property="button10" destination="TuD-sU-1gO" id="5e3-p0-lFb"/>
+                        <outlet property="button11" destination="MGP-pI-aLS" id="FCw-67-bDO"/>
+                        <outlet property="button12" destination="ug1-x1-jbJ" id="QGL-Ds-THU"/>
+                        <outlet property="button13" destination="u1z-J5-2BU" id="cEi-vc-0eW"/>
+                        <outlet property="button14" destination="dDo-hx-hZ1" id="BMr-pd-355"/>
+                        <outlet property="button15" destination="gc4-Hs-yWN" id="PUv-aK-usM"/>
+                        <outlet property="button2" destination="wIf-ds-7ZC" id="ofx-JX-o9M"/>
+                        <outlet property="button3" destination="NGN-cZ-6h5" id="Wjy-6g-NpG"/>
+                        <outlet property="button4" destination="50U-da-Efl" id="Kax-HH-aWa"/>
+                        <outlet property="button5" destination="32F-fi-ST1" id="vt5-SA-4hQ"/>
+                        <outlet property="button6" destination="eBA-yC-Y6m" id="Tgx-je-V5E"/>
+                        <outlet property="button7" destination="211-ra-HZ7" id="oLA-5z-x8o"/>
+                        <outlet property="button8" destination="04n-Ni-PXz" id="SAD-Ii-I20"/>
+                        <outlet property="button9" destination="d8H-C9-Ms2" id="34M-Wi-C2Q"/>
                         <outlet property="myCounterLabel" destination="qFT-78-lh1" id="Big-T6-REu"/>
                         <outlet property="myScore" destination="qjY-IM-DMf" id="JUn-Vg-tkw"/>
                         <outlet property="startButton" destination="Zeb-my-O1Y" id="Mno-X9-A2D"/>
@@ -252,6 +256,11 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo.png" width="200" height="100"/>
+        <image name="pw_maze_black.png" width="46" height="23"/>
+        <image name="redCircle.png" width="400" height="400"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

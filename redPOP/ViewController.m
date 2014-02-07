@@ -29,7 +29,7 @@ int secondsLeft;
 	// Do any additional setup after loading the view, typically from a nib.
     stillValid = true;
     secondsLeft = 30;
-    self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"fake_brick.png"]];
+    self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"food.png"]];
     [[UIApplication sharedApplication] setStatusBarHidden:YES
                                             withAnimation:UIStatusBarAnimationFade];
 }
@@ -90,6 +90,8 @@ int secondsLeft;
         for (int x = 0;  x < 15; x++) {
             int r = arc4random() % 15;
             [buttons[r]setTitleColor:[UIColor colorWithRed:255.0 green:000.0 blue:000 alpha:1.0] forState: UIControlStateNormal];
+            UIImage *buttonImage = [UIImage imageNamed:@"blueCircle.png"];
+            [buttons[r] setImage:buttonImage forState:UIControlStateNormal];
         }
         
     } completion:^(BOOL finished) {
@@ -98,6 +100,8 @@ int secondsLeft;
                 for (int x = 0;  x < 15; x++) {
                     int r = arc4random() % 15;
                     [buttons[r] setTitleColor:[UIColor colorWithRed:000.0 green:000.0 blue:255.0 alpha:1.0] forState: UIControlStateNormal];
+                    UIImage *buttonImage = [UIImage imageNamed:@"redCircle.png"];
+                    [buttons[r] setImage:buttonImage forState:UIControlStateNormal];
                 }
             } completion:nil];};
     }];
@@ -111,7 +115,7 @@ int secondsLeft;
 
 -(IBAction)goodTouch:(id)sender{
     score++;
-    myScore.text = [NSString stringWithFormat:@"%9d", score];
+    myScore.text = [NSString stringWithFormat:@"%05d", score];
 }
 
 
