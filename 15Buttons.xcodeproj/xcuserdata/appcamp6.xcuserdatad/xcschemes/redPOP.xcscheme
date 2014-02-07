@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DF0F1C4B18A413E300BB646C"
-               BuildableName = "redPOP.app"
-               BlueprintName = "redPOP"
-               ReferencedContainer = "container:redPOP.xcodeproj">
+               BuildableName = "15Buttons.app"
+               BlueprintName = "15Buttons"
+               ReferencedContainer = "container:15Buttons.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DF0F1C6C18A413E300BB646C"
-               BuildableName = "redPOPTests.xctest"
-               BlueprintName = "redPOPTests"
-               ReferencedContainer = "container:redPOP.xcodeproj">
+               BuildableName = "15ButtonsTests.xctest"
+               BlueprintName = "15ButtonsTests"
+               ReferencedContainer = "container:15Buttons.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DF0F1C4B18A413E300BB646C"
-            BuildableName = "redPOP.app"
-            BlueprintName = "redPOP"
-            ReferencedContainer = "container:redPOP.xcodeproj">
+            BuildableName = "15Buttons.app"
+            BlueprintName = "15Buttons"
+            ReferencedContainer = "container:15Buttons.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DF0F1C4B18A413E300BB646C"
-            BuildableName = "redPOP.app"
-            BlueprintName = "redPOP"
-            ReferencedContainer = "container:redPOP.xcodeproj">
+            BuildableName = "15Buttons.app"
+            BlueprintName = "15Buttons"
+            ReferencedContainer = "container:15Buttons.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DF0F1C4B18A413E300BB646C"
-            BuildableName = "redPOP.app"
-            BlueprintName = "redPOP"
-            ReferencedContainer = "container:redPOP.xcodeproj">
+            BuildableName = "15Buttons.app"
+            BlueprintName = "15Buttons"
+            ReferencedContainer = "container:15Buttons.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

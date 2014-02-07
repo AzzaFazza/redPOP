@@ -21,6 +21,19 @@
 		DF0F1C7118A413E300BB646C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0F1C5318A413E300BB646C /* UIKit.framework */; };
 		DF0F1C7918A413E300BB646C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF0F1C7718A413E300BB646C /* InfoPlist.strings */; };
 		DF0F1C7B18A413E300BB646C /* redPOPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0F1C7A18A413E300BB646C /* redPOPTests.m */; };
+		DF0F1C8618A4191800BB646C /* lighted.png in Resources */ = {isa = PBXBuildFile; fileRef = DF0F1C8418A4191800BB646C /* lighted.png */; };
+		DF0F1C8718A4191800BB646C /* non-lighted.png in Resources */ = {isa = PBXBuildFile; fileRef = DF0F1C8518A4191800BB646C /* non-lighted.png */; };
+		DF57758018A45F54008AD138 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF57757F18A45F54008AD138 /* iAd.framework */; };
+		DF57758318A46156008AD138 /* pw_maze_black_@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = DF57758118A46156008AD138 /* pw_maze_black_@2X.png */; };
+		DF57758418A46156008AD138 /* pw_maze_black.png in Resources */ = {isa = PBXBuildFile; fileRef = DF57758218A46156008AD138 /* pw_maze_black.png */; };
+		DF57758718A462DE008AD138 /* wild_oliva_@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = DF57758518A462DE008AD138 /* wild_oliva_@2X.png */; };
+		DF57758818A462DE008AD138 /* wild_oliva.png in Resources */ = {isa = PBXBuildFile; fileRef = DF57758618A462DE008AD138 /* wild_oliva.png */; };
+		DF57758B18A46322008AD138 /* black_thread_@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = DF57758918A46322008AD138 /* black_thread_@2X.png */; };
+		DF57758C18A46322008AD138 /* black_thread.png in Resources */ = {isa = PBXBuildFile; fileRef = DF57758A18A46322008AD138 /* black_thread.png */; };
+		DF57758F18A46453008AD138 /* starring_@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = DF57758D18A46453008AD138 /* starring_@2X.png */; };
+		DF57759018A46453008AD138 /* starring.png in Resources */ = {isa = PBXBuildFile; fileRef = DF57758E18A46453008AD138 /* starring.png */; };
+		DF57759218A465C6008AD138 /* fake_brick.png in Resources */ = {isa = PBXBuildFile; fileRef = DF57759118A465C6008AD138 /* fake_brick.png */; };
+		DFD421C318A43E9D004027C0 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD421C218A43E9D004027C0 /* SpriteKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,25 +47,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DF0F1C4C18A413E300BB646C /* redPOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redPOP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0F1C4C18A413E300BB646C /* 15Buttons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 15Buttons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0F1C4F18A413E300BB646C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF0F1C5118A413E300BB646C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DF0F1C5318A413E300BB646C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		DF0F1C5718A413E300BB646C /* redPOP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "redPOP-Info.plist"; sourceTree = "<group>"; };
+		DF0F1C5718A413E300BB646C /* 15Buttons-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "15Buttons-Info.plist"; sourceTree = "<group>"; };
 		DF0F1C5918A413E300BB646C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF0F1C5B18A413E300BB646C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DF0F1C5D18A413E300BB646C /* redPOP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "redPOP-Prefix.pch"; sourceTree = "<group>"; };
+		DF0F1C5D18A413E300BB646C /* 15Buttons-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "15Buttons-Prefix.pch"; sourceTree = "<group>"; };
 		DF0F1C5E18A413E300BB646C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DF0F1C5F18A413E300BB646C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DF0F1C6218A413E300BB646C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF0F1C6418A413E300BB646C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DF0F1C6518A413E300BB646C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DF0F1C6718A413E300BB646C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		DF0F1C6D18A413E300BB646C /* redPOPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = redPOPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0F1C6D18A413E300BB646C /* 15ButtonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 15ButtonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0F1C6E18A413E300BB646C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		DF0F1C7618A413E300BB646C /* redPOPTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "redPOPTests-Info.plist"; sourceTree = "<group>"; };
+		DF0F1C7618A413E300BB646C /* 15ButtonsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "15ButtonsTests-Info.plist"; sourceTree = "<group>"; };
 		DF0F1C7818A413E300BB646C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF0F1C7A18A413E300BB646C /* redPOPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = redPOPTests.m; sourceTree = "<group>"; };
+		DF0F1C8418A4191800BB646C /* lighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lighted.png; sourceTree = "<group>"; };
+		DF0F1C8518A4191800BB646C /* non-lighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "non-lighted.png"; sourceTree = "<group>"; };
+		DF57757F18A45F54008AD138 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		DF57758118A46156008AD138 /* pw_maze_black_@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pw_maze_black_@2X.png"; sourceTree = "<group>"; };
+		DF57758218A46156008AD138 /* pw_maze_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pw_maze_black.png; sourceTree = "<group>"; };
+		DF57758518A462DE008AD138 /* wild_oliva_@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wild_oliva_@2X.png"; sourceTree = "<group>"; };
+		DF57758618A462DE008AD138 /* wild_oliva.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wild_oliva.png; sourceTree = "<group>"; };
+		DF57758918A46322008AD138 /* black_thread_@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black_thread_@2X.png"; sourceTree = "<group>"; };
+		DF57758A18A46322008AD138 /* black_thread.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_thread.png; sourceTree = "<group>"; };
+		DF57758D18A46453008AD138 /* starring_@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "starring_@2X.png"; sourceTree = "<group>"; };
+		DF57758E18A46453008AD138 /* starring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starring.png; sourceTree = "<group>"; };
+		DF57759118A465C6008AD138 /* fake_brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fake_brick.png; sourceTree = "<group>"; };
+		DFD421C218A43E9D004027C0 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF57758018A45F54008AD138 /* iAd.framework in Frameworks */,
+				DFD421C318A43E9D004027C0 /* SpriteKit.framework in Frameworks */,
 				DF0F1C5218A413E300BB646C /* CoreGraphics.framework in Frameworks */,
 				DF0F1C5418A413E300BB646C /* UIKit.framework in Frameworks */,
 				DF0F1C5018A413E300BB646C /* Foundation.framework in Frameworks */,
@@ -82,8 +110,8 @@
 		DF0F1C4318A413E300BB646C = {
 			isa = PBXGroup;
 			children = (
-				DF0F1C5518A413E300BB646C /* redPOP */,
-				DF0F1C7418A413E300BB646C /* redPOPTests */,
+				DF0F1C5518A413E300BB646C /* 15Buttons */,
+				DF0F1C7418A413E300BB646C /* 15Buttons */,
 				DF0F1C4E18A413E300BB646C /* Frameworks */,
 				DF0F1C4D18A413E300BB646C /* Products */,
 			);
@@ -92,8 +120,8 @@
 		DF0F1C4D18A413E300BB646C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF0F1C4C18A413E300BB646C /* redPOP.app */,
-				DF0F1C6D18A413E300BB646C /* redPOPTests.xctest */,
+				DF0F1C4C18A413E300BB646C /* 15Buttons.app */,
+				DF0F1C6D18A413E300BB646C /* 15ButtonsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +129,8 @@
 		DF0F1C4E18A413E300BB646C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF57757F18A45F54008AD138 /* iAd.framework */,
+				DFD421C218A43E9D004027C0 /* SpriteKit.framework */,
 				DF0F1C4F18A413E300BB646C /* Foundation.framework */,
 				DF0F1C5118A413E300BB646C /* CoreGraphics.framework */,
 				DF0F1C5318A413E300BB646C /* UIKit.framework */,
@@ -109,7 +139,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DF0F1C5518A413E300BB646C /* redPOP */ = {
+		DF0F1C5518A413E300BB646C /* 15Buttons */ = {
 			isa = PBXGroup;
 			children = (
 				DF0F1C5E18A413E300BB646C /* AppDelegate.h */,
@@ -120,33 +150,46 @@
 				DF0F1C6718A413E300BB646C /* Images.xcassets */,
 				DF0F1C5618A413E300BB646C /* Supporting Files */,
 			);
+			name = 15Buttons;
 			path = redPOP;
 			sourceTree = "<group>";
 		};
 		DF0F1C5618A413E300BB646C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DF0F1C5718A413E300BB646C /* redPOP-Info.plist */,
+				DF0F1C5718A413E300BB646C /* 15Buttons-Info.plist */,
 				DF0F1C5818A413E300BB646C /* InfoPlist.strings */,
 				DF0F1C5B18A413E300BB646C /* main.m */,
-				DF0F1C5D18A413E300BB646C /* redPOP-Prefix.pch */,
+				DF0F1C5D18A413E300BB646C /* 15Buttons-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DF0F1C7418A413E300BB646C /* redPOPTests */ = {
+		DF0F1C7418A413E300BB646C /* 15Buttons */ = {
 			isa = PBXGroup;
 			children = (
 				DF0F1C7A18A413E300BB646C /* redPOPTests.m */,
 				DF0F1C7518A413E300BB646C /* Supporting Files */,
 			);
+			name = 15Buttons;
 			path = redPOPTests;
 			sourceTree = "<group>";
 		};
 		DF0F1C7518A413E300BB646C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DF0F1C7618A413E300BB646C /* redPOPTests-Info.plist */,
+				DF57759118A465C6008AD138 /* fake_brick.png */,
+				DF57758D18A46453008AD138 /* starring_@2X.png */,
+				DF57758E18A46453008AD138 /* starring.png */,
+				DF57758918A46322008AD138 /* black_thread_@2X.png */,
+				DF57758A18A46322008AD138 /* black_thread.png */,
+				DF57758518A462DE008AD138 /* wild_oliva_@2X.png */,
+				DF57758618A462DE008AD138 /* wild_oliva.png */,
+				DF57758118A46156008AD138 /* pw_maze_black_@2X.png */,
+				DF57758218A46156008AD138 /* pw_maze_black.png */,
+				DF0F1C8418A4191800BB646C /* lighted.png */,
+				DF0F1C8518A4191800BB646C /* non-lighted.png */,
+				DF0F1C7618A413E300BB646C /* 15ButtonsTests-Info.plist */,
 				DF0F1C7718A413E300BB646C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -155,9 +198,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DF0F1C4B18A413E300BB646C /* redPOP */ = {
+		DF0F1C4B18A413E300BB646C /* 15Buttons */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF0F1C7E18A413E300BB646C /* Build configuration list for PBXNativeTarget "redPOP" */;
+			buildConfigurationList = DF0F1C7E18A413E300BB646C /* Build configuration list for PBXNativeTarget "15Buttons" */;
 			buildPhases = (
 				DF0F1C4818A413E300BB646C /* Sources */,
 				DF0F1C4918A413E300BB646C /* Frameworks */,
@@ -167,14 +210,14 @@
 			);
 			dependencies = (
 			);
-			name = redPOP;
+			name = 15Buttons;
 			productName = redPOP;
-			productReference = DF0F1C4C18A413E300BB646C /* redPOP.app */;
+			productReference = DF0F1C4C18A413E300BB646C /* 15Buttons.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DF0F1C6C18A413E300BB646C /* redPOPTests */ = {
+		DF0F1C6C18A413E300BB646C /* 15ButtonsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF0F1C8118A413E300BB646C /* Build configuration list for PBXNativeTarget "redPOPTests" */;
+			buildConfigurationList = DF0F1C8118A413E300BB646C /* Build configuration list for PBXNativeTarget "15ButtonsTests" */;
 			buildPhases = (
 				DF0F1C6918A413E300BB646C /* Sources */,
 				DF0F1C6A18A413E300BB646C /* Frameworks */,
@@ -185,9 +228,9 @@
 			dependencies = (
 				DF0F1C7318A413E300BB646C /* PBXTargetDependency */,
 			);
-			name = redPOPTests;
+			name = 15ButtonsTests;
 			productName = redPOPTests;
-			productReference = DF0F1C6D18A413E300BB646C /* redPOPTests.xctest */;
+			productReference = DF0F1C6D18A413E300BB646C /* 15ButtonsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +247,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DF0F1C4718A413E300BB646C /* Build configuration list for PBXProject "redPOP" */;
+			buildConfigurationList = DF0F1C4718A413E300BB646C /* Build configuration list for PBXProject "15Buttons" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -217,8 +260,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF0F1C4B18A413E300BB646C /* redPOP */,
-				DF0F1C6C18A413E300BB646C /* redPOPTests */,
+				DF0F1C4B18A413E300BB646C /* 15Buttons */,
+				DF0F1C6C18A413E300BB646C /* 15ButtonsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,9 +271,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF57759218A465C6008AD138 /* fake_brick.png in Resources */,
+				DF57758718A462DE008AD138 /* wild_oliva_@2X.png in Resources */,
 				DF0F1C6818A413E300BB646C /* Images.xcassets in Resources */,
+				DF57758F18A46453008AD138 /* starring_@2X.png in Resources */,
+				DF0F1C8718A4191800BB646C /* non-lighted.png in Resources */,
+				DF57758818A462DE008AD138 /* wild_oliva.png in Resources */,
 				DF0F1C5A18A413E300BB646C /* InfoPlist.strings in Resources */,
 				DF0F1C6318A413E300BB646C /* Main.storyboard in Resources */,
+				DF57758B18A46322008AD138 /* black_thread_@2X.png in Resources */,
+				DF57758418A46156008AD138 /* pw_maze_black.png in Resources */,
+				DF57758318A46156008AD138 /* pw_maze_black_@2X.png in Resources */,
+				DF57758C18A46322008AD138 /* black_thread.png in Resources */,
+				DF0F1C8618A4191800BB646C /* lighted.png in Resources */,
+				DF57759018A46453008AD138 /* starring.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +322,7 @@
 /* Begin PBXTargetDependency section */
 		DF0F1C7318A413E300BB646C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DF0F1C4B18A413E300BB646C /* redPOP */;
+			target = DF0F1C4B18A413E300BB646C /* 15Buttons */;
 			targetProxy = DF0F1C7218A413E300BB646C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -379,9 +433,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "redPOP/redPOP-Prefix.pch";
-				INFOPLIST_FILE = "redPOP/redPOP-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "redPOP/15Buttons-Prefix.pch";
+				INFOPLIST_FILE = "redPOP/15Buttons-Info.plist";
+				PRODUCT_NAME = 15Buttons;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,9 +446,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "redPOP/redPOP-Prefix.pch";
-				INFOPLIST_FILE = "redPOP/redPOP-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "redPOP/15Buttons-Prefix.pch";
+				INFOPLIST_FILE = "redPOP/15Buttons-Info.plist";
+				PRODUCT_NAME = 15Buttons;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -415,8 +469,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "redPOPTests/redPOPTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "redPOPTests/15ButtonsTests-Info.plist";
+				PRODUCT_NAME = 15ButtonsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -434,8 +488,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "redPOP/redPOP-Prefix.pch";
-				INFOPLIST_FILE = "redPOPTests/redPOPTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "redPOPTests/15ButtonsTests-Info.plist";
+				PRODUCT_NAME = 15ButtonsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -444,7 +498,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DF0F1C4718A413E300BB646C /* Build configuration list for PBXProject "redPOP" */ = {
+		DF0F1C4718A413E300BB646C /* Build configuration list for PBXProject "15Buttons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF0F1C7C18A413E300BB646C /* Debug */,
@@ -453,21 +507,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF0F1C7E18A413E300BB646C /* Build configuration list for PBXNativeTarget "redPOP" */ = {
+		DF0F1C7E18A413E300BB646C /* Build configuration list for PBXNativeTarget "15Buttons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF0F1C7F18A413E300BB646C /* Debug */,
 				DF0F1C8018A413E300BB646C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		DF0F1C8118A413E300BB646C /* Build configuration list for PBXNativeTarget "redPOPTests" */ = {
+		DF0F1C8118A413E300BB646C /* Build configuration list for PBXNativeTarget "15ButtonsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF0F1C8218A413E300BB646C /* Debug */,
 				DF0F1C8318A413E300BB646C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

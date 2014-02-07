@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:redPOP.xcodeproj">
+      location = "self:15Buttons.xcodeproj">
    </FileRef>
 </Workspace>
