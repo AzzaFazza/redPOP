@@ -26,6 +26,8 @@ int secondsLeft;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setFontFamily:@"" forView:self.view andSubViews:YES];
+    
 	// Do any additional setup after loading the view, typically from a nib.
     stillValid = true;
     secondsLeft = 30;
@@ -33,7 +35,22 @@ int secondsLeft;
     [[UIApplication sharedApplication] setStatusBarHidden:YES
                                             withAnimation:UIStatusBarAnimationFade];
 }
-
+-(void)setFontFamily:(NSString*)fontFamily forView:(UIView*)view andSubViews:(BOOL)isSubViews
+{
+    if ([view isKindOfClass:[UILabel class]])
+    {
+        UILabel *lbl = (UILabel *)view;
+        [lbl setFont:[UIFont fontWithName:fontFamily size:[[lbl font] pointSize]]];
+    }
+    
+    if (isSubViews)
+    {
+        for (UIView *sview in view.subviews)
+        {
+            [self setFontFamily:fontFamily forView:sview andSubViews:YES];
+        }
+    }
+}
 //hide status bar
 - (BOOL)prefersStatusBarHidden {
     return YES;

@@ -37,6 +37,7 @@
 		DF943C7F18A5048A00D0A1D4 /* blueCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = DF943C7D18A5048A00D0A1D4 /* blueCircle.png */; };
 		DF943C8018A5048A00D0A1D4 /* redCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = DF943C7E18A5048A00D0A1D4 /* redCircle.png */; };
 		DF943C8218A5079000D0A1D4 /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = DF943C8118A5079000D0A1D4 /* food.png */; };
+		DF943C8418A50B3E00D0A1D4 /* MixStitch.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF943C8318A50B0B00D0A1D4 /* MixStitch.ttf */; };
 		DFD421C318A43E9D004027C0 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD421C218A43E9D004027C0 /* SpriteKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		DF943C7D18A5048A00D0A1D4 /* blueCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueCircle.png; sourceTree = "<group>"; };
 		DF943C7E18A5048A00D0A1D4 /* redCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redCircle.png; sourceTree = "<group>"; };
 		DF943C8118A5079000D0A1D4 /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
+		DF943C8318A50B0B00D0A1D4 /* MixStitch.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MixStitch.ttf; sourceTree = "<group>"; };
 		DFD421C218A43E9D004027C0 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -186,6 +188,7 @@
 		DF0F1C7518A413E300BB646C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DF943C8318A50B0B00D0A1D4 /* MixStitch.ttf */,
 				DF943C8118A5079000D0A1D4 /* food.png */,
 				DF943C7D18A5048A00D0A1D4 /* blueCircle.png */,
 				DF943C7E18A5048A00D0A1D4 /* redCircle.png */,
@@ -283,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF943C8418A50B3E00D0A1D4 /* MixStitch.ttf in Resources */,
 				DF57759218A465C6008AD138 /* fake_brick.png in Resources */,
 				DF57758718A462DE008AD138 /* wild_oliva_@2X.png in Resources */,
 				DF0F1C6818A413E300BB646C /* Images.xcassets in Resources */,
