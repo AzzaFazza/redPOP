@@ -13,6 +13,7 @@
 
 @interface ViewController (){
     bool stillValid;
+    NSString* scoreString;
 }
 
 @end
@@ -40,8 +41,6 @@ int gameSeconds = 5;
     self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"food.png"]];
     [[UIApplication sharedApplication] setStatusBarHidden:YES
                                             withAnimation:UIStatusBarAnimationFade];
-    
-    NSString* scoreString = [NSString stringWithFormat:@"Your Score is: %d", score];
     alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:scoreString delegate:self cancelButtonTitle:@"Restart" otherButtonTitles:nil , nil];
 }
 
@@ -65,7 +64,7 @@ int gameSeconds = 5;
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if (buttonIndex == 0) {
         score = 0;
-        myScore.text = @"0";
+        myScore.text = @"0"; myCounterLabel.text = @"30";
         [self countdownTimer];
     }
 }
@@ -94,12 +93,12 @@ int gameSeconds = 5;
                     secondsLeft = 0;
                     
             }
+            scoreString = [NSString stringWithFormat:@"Your Score is: %d", score];   
     if(secondsLeft  <= 0)
     {
         [timer invalidate];
         timer = nil;
         [alert show];
-        
     }
 }
 
