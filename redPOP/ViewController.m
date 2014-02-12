@@ -20,12 +20,8 @@
 @implementation ViewController
 @synthesize button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11, button12, button13, button14, button15, buttons, myCounterLabel, startButton, touch, swipe;
 
-<<<<<<< HEAD
 int loopCount;
 NSTimer * timer;
-=======
-bool notFinished = YES;
->>>>>>> 85238f4534b47921a48aa0807e073450958c2ae1
 int seconds,minutes, hours;
 int secondsLeft;
 UIAlertView*alert;
@@ -71,13 +67,13 @@ int gameSeconds = 5;
 
 //Timer
 - (void)updateCounter:(NSTimer *)theTimer {
-    if(!secondsLeft == 0 && theTimer > 0){
+    
+    
+     if(!secondsLeft == 0 && theTimer > 0){
         startButton.hidden = YES;
+        
         secondsLeft -- ;
-<<<<<<< HEAD
         loopCount--;
-=======
->>>>>>> 85238f4534b47921a48aa0807e073450958c2ae1
         [self alternateColors];
         seconds = (secondsLeft %3600) % 60;
     }
@@ -88,33 +84,33 @@ int gameSeconds = 5;
                     secondsLeft = 0;
                     
             }
-    if(secondsLeft  <= 0){
+    if(secondsLeft  <= 0)
+    {
+        [timer invalidate];
+        timer = nil;
         [alert show];
+        
     }
 }
 
 
 -(void)countdownTimer{
-<<<<<<< HEAD
     loopCount = gameSeconds;
     secondsLeft = seconds = gameSeconds;
 
      if([timer isValid]){
-=======
-    
-    secondsLeft = seconds = 5;
-    
-        if([timer isValid]){
->>>>>>> 85238f4534b47921a48aa0807e073450958c2ae1
             stillValid = false;
         }
-        timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
+    
+    
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
+    
 }
 
 -(void)callColors{
     {
         [self performSelector: @selector(alternateColors) withObject:nil afterDelay: 0.03];
-        [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(alternateColors) userInfo:nil repeats:notFinished];
+        [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(alternateColors) userInfo:nil repeats:YES];
         
     }
     return;
@@ -171,7 +167,8 @@ int gameSeconds = 5;
 -(IBAction)pressedButton:(id)sender{
     score = 0;
     [self countdownTimer];
-    //[self callColors];
+    
+  
     
 }
 
