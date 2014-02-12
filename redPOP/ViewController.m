@@ -23,6 +23,7 @@
 bool notFinished = YES;
 int seconds,minutes, hours;
 int secondsLeft;
+UIAlertView*alert;
 
 - (void)viewDidLoad
 {
@@ -36,6 +37,7 @@ int secondsLeft;
     self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"food.png"]];
     [[UIApplication sharedApplication] setStatusBarHidden:YES
                                             withAnimation:UIStatusBarAnimationFade];
+    alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:@"You Got A Score of: " delegate:nil cancelButtonTitle:@"Restart" otherButtonTitles:nil , nil];
 }
 -(void)setFontFamily:(NSString*)fontFamily forView:(UIView*)view andSubViews:(BOOL)isSubViews
 {
@@ -66,34 +68,33 @@ int secondsLeft;
         secondsLeft -- ;
         [self alternateColors];
         seconds = (secondsLeft %3600) % 60;
-            if(!timer < 9){
+    }
+        if(!timer < 9){
                     myCounterLabel.text = [NSString stringWithFormat:@"%2d", seconds];
             }
                 else{
-                        secondsLeft = 0;
-                    //notFinished = NO;
-                }
-        }
-    else
-        notFinished = NO;
+                    secondsLeft = 0;
+                    
+            }
+    if(secondsLeft  <= 0){
+        [alert show];
     }
+}
+
 
 -(void)countdownTimer{
     
     secondsLeft = seconds = 5;
     
-        if([timer isValid])
-        {
+        if([timer isValid]){
             stillValid = false;
         }
-    timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
+        timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
 }
 
 -(void)callColors{
     {
         [self performSelector: @selector(alternateColors) withObject:nil afterDelay: 0.03];
-        
-        
         [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(alternateColors) userInfo:nil repeats:notFinished];
         
     }
@@ -142,7 +143,7 @@ int secondsLeft;
 
 -(IBAction)goodTouch:(id)sender{
     score++;
-    myScore.text = [NSString stringWithFormat:@"%05d", score];
+    myScore.text = [NSString stringWithFormat:@"%5d", score];
 }
 
 
