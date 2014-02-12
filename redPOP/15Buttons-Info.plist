@@ -30,7 +30,8 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Supporting Files/MixStitch.ttf</string>
+		<string>MixStitch.ttf</string>
+		<string></string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>

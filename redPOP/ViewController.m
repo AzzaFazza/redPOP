@@ -18,7 +18,7 @@
 @end
 
 @implementation ViewController
-@synthesize button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11, button12, button13, button14, button15, buttons, myCounterLabel, startButton;
+@synthesize button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11, button12, button13, button14, button15, buttons, myCounterLabel, startButton, touch, swipe;
 
 int seconds,minutes, hours;
 int secondsLeft;
@@ -26,7 +26,8 @@ int secondsLeft;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setFontFamily:@"" forView:self.view andSubViews:YES];
+
+    [self setFontFamily:@"MixStitch" forView:self.view andSubViews:YES];
     
 	// Do any additional setup after loading the view, typically from a nib.
     stillValid = true;
@@ -51,13 +52,13 @@ int secondsLeft;
         }
     }
 }
+
 //hide status bar
 - (BOOL)prefersStatusBarHidden {
     return YES;
 }
 
 //Timer
-
 - (void)updateCounter:(NSTimer *)theTimer {
     if(!secondsLeft == 0 && theTimer > 0){
         startButton.hidden = YES;
@@ -85,7 +86,7 @@ int secondsLeft;
 -(void)callColors{
     while (!timer >= 0) {
         [self performSelector: @selector(alternateColors) withObject:nil afterDelay: 0.03];
-        [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(alternateColors) userInfo:nil repeats:YES];
+        [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(alternateColors) userInfo:nil repeats:YES];
         break;
     }
     return;
@@ -107,7 +108,7 @@ int secondsLeft;
         for (int x = 0;  x < 15; x++) {
             int r = arc4random() % 15;
             [buttons[r]setTitleColor:[UIColor colorWithRed:255.0 green:000.0 blue:000 alpha:1.0] forState: UIControlStateNormal];
-            UIImage *buttonImage = [UIImage imageNamed:@"blueCircle.png"];
+            UIImage *buttonImage = [UIImage imageNamed:@"blue.png"];
             [buttons[r] setImage:buttonImage forState:UIControlStateNormal];
         }
         
@@ -117,7 +118,7 @@ int secondsLeft;
                 for (int x = 0;  x < 15; x++) {
                     int r = arc4random() % 15;
                     [buttons[r] setTitleColor:[UIColor colorWithRed:000.0 green:000.0 blue:255.0 alpha:1.0] forState: UIControlStateNormal];
-                    UIImage *buttonImage = [UIImage imageNamed:@"redCircle.png"];
+                    UIImage *buttonImage = [UIImage imageNamed:@"red.png"];
                     [buttons[r] setImage:buttonImage forState:UIControlStateNormal];
                 }
             } completion:nil];};
