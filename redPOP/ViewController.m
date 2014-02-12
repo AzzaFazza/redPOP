@@ -63,7 +63,7 @@ int secondsLeft;
     if(!secondsLeft == 0 && theTimer > 0){
         startButton.hidden = YES;
         secondsLeft -- ;
-        seconds = (secondsLeft % 3600) % 60;
+        seconds = (secondsLeft %3600) % 60;
             if(!timer < 9){
                     myCounterLabel.text = [NSString stringWithFormat:@"%2d", seconds];
             }
@@ -75,15 +75,12 @@ int secondsLeft;
 
 -(void)countdownTimer{
     
-        secondsLeft = seconds = 5;
+    secondsLeft = seconds = 30;
         if([timer isValid])
         {
             stillValid = false;
         }
-        else{
-            stillValid = true;
-            timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
-        }
+        timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
 }
 
 -(void)callColors{
@@ -102,8 +99,6 @@ int secondsLeft;
 -(void)alternateColors{
     //This for loop will set up the buttons and will also set the background of the image
     buttons = [NSMutableArray array];
-    if (stillValid == true) {
-        
     for(int i = 1; i <= 15; ++i) {
         [buttons addObject:[self valueForKey:[NSString stringWithFormat:@"button%d", i]]];
     }
@@ -128,7 +123,6 @@ int secondsLeft;
                 }
             } completion:nil];};
     }];
-  }
 }
 
 -(IBAction)pressedButton:(id)sender{
