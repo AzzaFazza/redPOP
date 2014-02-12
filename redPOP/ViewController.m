@@ -13,7 +13,6 @@
 
 @interface ViewController (){
     bool stillValid;
-    NSString* scoreString;
 }
 
 @end
@@ -21,8 +20,7 @@
 @implementation ViewController
 @synthesize button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11, button12, button13, button14, button15, buttons, myCounterLabel, startButton, touch, swipe;
 
-int loopCount = 4;
-NSTimer * timer;
+bool notFinished = YES;
 int seconds,minutes, hours;
 int secondsLeft;
 UIAlertView*alert;
@@ -39,6 +37,7 @@ UIAlertView*alert;
     self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"food.png"]];
     [[UIApplication sharedApplication] setStatusBarHidden:YES
                                             withAnimation:UIStatusBarAnimationFade];
+    alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:@"You Got A Score of: " delegate:nil cancelButtonTitle:@"Restart" otherButtonTitles:nil , nil];
 }
 -(void)setFontFamily:(NSString*)fontFamily forView:(UIView*)view andSubViews:(BOOL)isSubViews
 {
@@ -64,13 +63,9 @@ UIAlertView*alert;
 
 //Timer
 - (void)updateCounter:(NSTimer *)theTimer {
-    
-    
-     if(!secondsLeft == 0 && theTimer > 0){
+    if(!secondsLeft == 0 && theTimer > 0){
         startButton.hidden = YES;
-        
         secondsLeft -- ;
-         loopCount--;
         [self alternateColors];
         seconds = (secondsLeft %3600) % 60;
     }
@@ -82,10 +77,7 @@ UIAlertView*alert;
                     
             }
     if(secondsLeft  <= 0){
-        scoreString = [NSString stringWithFormat:@"You Got A Score of:%5d", score];
-        alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:scoreString delegate:nil cancelButtonTitle:@"Restart" otherButtonTitles:nil , nil];
         [alert show];
-        
     }
 }
 
@@ -93,20 +85,17 @@ UIAlertView*alert;
 -(void)countdownTimer{
     
     secondsLeft = seconds = 5;
-
-     if([timer isValid]){
+    
+        if([timer isValid]){
             stillValid = false;
         }
-    
-    
-    timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
-    
+        timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
 }
 
 -(void)callColors{
     {
         [self performSelector: @selector(alternateColors) withObject:nil afterDelay: 0.03];
-        [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(alternateColors) userInfo:nil repeats:YES];
+        [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(alternateColors) userInfo:nil repeats:notFinished];
         
     }
     return;
@@ -148,8 +137,7 @@ UIAlertView*alert;
 -(IBAction)pressedButton:(id)sender{
     score = 0;
     [self countdownTimer];
-    
-  
+    //[self callColors];
     
 }
 
