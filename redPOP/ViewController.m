@@ -41,7 +41,8 @@ int gameSeconds = 5;
     [[UIApplication sharedApplication] setStatusBarHidden:YES
                                             withAnimation:UIStatusBarAnimationFade];
     
-    alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:@"Gooooujons!" delegate:nil cancelButtonTitle:@"Restart" otherButtonTitles:nil , nil];
+    NSString* scoreString = [NSString stringWithFormat:@"Your Score is: %d", score];
+    alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:scoreString delegate:self cancelButtonTitle:@"Restart" otherButtonTitles:nil , nil];
 }
 
 -(void)setFontFamily:(NSString*)fontFamily forView:(UIView*)view andSubViews:(BOOL)isSubViews
@@ -58,6 +59,14 @@ int gameSeconds = 5;
         {
             [self setFontFamily:fontFamily forView:sview andSubViews:YES];
         }
+    }
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 0) {
+        score = 0;
+        myScore.text = @"0";
+        [self countdownTimer];
     }
 }
 
