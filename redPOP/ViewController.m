@@ -20,11 +20,13 @@
 @implementation ViewController
 @synthesize button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11, button12, button13, button14, button15, buttons, myCounterLabel, startButton, touch, swipe;
 
-int loopCount = 4;
+int loopCount;
 NSTimer * timer;
 int seconds,minutes, hours;
 int secondsLeft;
 UIAlertView*alert;
+NSString *concatScore;
+int gameSeconds = 5;
 
 - (void)viewDidLoad
 {
@@ -34,11 +36,12 @@ UIAlertView*alert;
     
 	// Do any additional setup after loading the view, typically from a nib.
     stillValid = true;
-    secondsLeft = 30;
+    secondsLeft = gameSeconds;
     self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"food.png"]];
     [[UIApplication sharedApplication] setStatusBarHidden:YES
                                             withAnimation:UIStatusBarAnimationFade];
-    alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:@"You Got A Score of: " delegate:nil cancelButtonTitle:@"Restart" otherButtonTitles:nil , nil];
+    
+    alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:@"Gooooujons!" delegate:nil cancelButtonTitle:@"Restart" otherButtonTitles:nil , nil];
 }
 -(void)setFontFamily:(NSString*)fontFamily forView:(UIView*)view andSubViews:(BOOL)isSubViews
 {
@@ -70,7 +73,7 @@ UIAlertView*alert;
         startButton.hidden = YES;
         
         secondsLeft -- ;
-         loopCount--;
+        loopCount--;
         [self alternateColors];
         seconds = (secondsLeft %3600) % 60;
     }
@@ -92,8 +95,8 @@ UIAlertView*alert;
 
 
 -(void)countdownTimer{
-    
-    secondsLeft = seconds = 5;
+    loopCount = gameSeconds;
+    secondsLeft = seconds = gameSeconds;
 
      if([timer isValid]){
             stillValid = false;
@@ -117,6 +120,21 @@ UIAlertView*alert;
 {
     [super viewDidAppear: animated];
 }
+
+
+-(void)resetGame
+{
+    score = 0;
+    secondsLeft = gameSeconds;
+    seconds = gameSeconds;
+    loopCount = gameSeconds;
+    
+    
+    
+}
+
+
+
 -(void)alternateColors{
     //This for loop will set up the buttons and will also set the background of the image
     buttons = [NSMutableArray array];
