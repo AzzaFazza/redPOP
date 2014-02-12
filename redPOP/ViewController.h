@@ -40,13 +40,6 @@
 
 -(IBAction)pressedButton:(id)sender;
 
-//Swipe Gesture
-@property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipe;
-
-//Touch Gesture
-@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *touch;
-
-
 -(IBAction)goodTouch:(id)sender;
 -(IBAction)badTouch:(id)sender;
 
