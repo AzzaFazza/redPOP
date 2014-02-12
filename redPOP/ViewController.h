@@ -40,6 +40,7 @@
 
 -(IBAction)pressedButton:(id)sender;
 
+
 //Swipe Gesture
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipe;
 

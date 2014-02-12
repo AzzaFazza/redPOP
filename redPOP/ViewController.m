@@ -43,6 +43,7 @@ int gameSeconds = 5;
     
     alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:@"Gooooujons!" delegate:nil cancelButtonTitle:@"Restart" otherButtonTitles:nil , nil];
 }
+
 -(void)setFontFamily:(NSString*)fontFamily forView:(UIView*)view andSubViews:(BOOL)isSubViews
 {
     if ([view isKindOfClass:[UILabel class]])
