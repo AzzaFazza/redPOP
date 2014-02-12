@@ -13,6 +13,7 @@
 
 @interface ViewController (){
     bool stillValid;
+    NSString* scoreString;
 }
 
 @end
@@ -37,7 +38,6 @@ UIAlertView*alert;
     self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"food.png"]];
     [[UIApplication sharedApplication] setStatusBarHidden:YES
                                             withAnimation:UIStatusBarAnimationFade];
-    alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:@"You Got A Score of: " delegate:nil cancelButtonTitle:@"Restart" otherButtonTitles:nil , nil];
 }
 -(void)setFontFamily:(NSString*)fontFamily forView:(UIView*)view andSubViews:(BOOL)isSubViews
 {
@@ -77,6 +77,8 @@ UIAlertView*alert;
                     
             }
     if(secondsLeft  <= 0){
+        scoreString = [NSString stringWithFormat:@"You Got A Score of:%5d", score];
+        alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:scoreString delegate:nil cancelButtonTitle:@"Restart" otherButtonTitles:nil , nil];
         [alert show];
     }
 }
